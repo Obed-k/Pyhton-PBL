@@ -1,0 +1,392 @@
+#Obed Kidimbu
+#12/12/22
+#Python 1 Final Project: "Sports Trivia"
+#Description: For my final project I designed a Sports trivia game. In the game, the user will be quizzed in wheretegories that represent a certain sport. Each category has 5 questions.
+#The purpose is to teach people about different sports
+# Password code to ask the user to enter the correct password.
+import time 
+def main():
+# A while loop that asks the user to input 
+    while True:
+        pass_choices=["Obed","donkeykong","sports"]
+        print(pass_choices)
+        PassWord = input ("Enter Password you think is correct: ")
+ 
+        if PassWord == "sports" or PassWord =="Obed":
+            time.sleep(1)
+            print ("Login successful!")
+            break
+        else:
+            print ("Password did not match please try again!")
+ 
+ 
+    time.sleep(3)
+ 
+main()
+
+#Ask the user to input their name.
+namelist=[]
+Your_name=input("Enter your name here:")
+namelist.append(Your_name)
+print(namelist)
+#Function were I welcome the user and explain how my program works
+def welcome():
+    print(namelist,"Welcome to sports Trivia⚽⚾🏀🏈🏃‍♂️💨\nIn this Trivia game you will be to test how much you know about each sport")
+    print("First category is basketball")
+welcome()
+#Coded a program to pause the question for 6 seconds before going to the next
+print("")   
+import time
+time.sleep(4)
+print("")
+#Basketball trivia questions. This is the First category an has 5 questions that the user must answer.
+def BasketballTrivia():
+    print("Welcome to the BASKETBALL CATEGORY LET SEE WHAT YOU KNOW🏀🏀")
+print("Q1.Which NBA Lengend has the most rings in NBA History?")
+print("A.Micheal Jordan\nB.Magic Johnson\nC.Bill Russel\nD.Kobe Bryant")
+#This is an if/else statement to ask and see if the user got the correct answer
+Bball_1=input("")
+if Bball_1.upper()=="C":
+    print("Correct *Many people dont actually know this*")
+else:
+    print("Sorry that incorrect the answer is C.Bill Rusell")
+#Code to pause the screen for 6 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#Code for asking the second question in the category
+print("Q2.Which two NBA teams have won 17 championships")
+print("A.Lakers&Celtics\nB.Lakers&Warriors\nC.Celtics&Warriors\nD.Non of these Teams")
+#Using if/else statment to see if the user get the question correct
+Bball_2=input("")
+if Bball_2.upper()=="A":
+    print("Correct that the most any team have gotten")
+else:
+    print("Sorry that incorrect the answer is A.Lakers&Celtics")
+#Code to pause the question for 2 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#Code for 3rd Basketball trivia question
+print("Q3.What does the NBA stand for?")
+print("A.National Basketball ALiance\nB.National Basketball Association\nC.National Basketball Allegiance\nD.National Ballers Association")
+#Used an if/esle statement to see if the user get the question correct.
+Bball_3=input("")
+if Bball_3.upper()=="B":
+    print("Correct!!")
+else:
+    print("Sorry that is incorrect the Answer is B.National Basketball Association")
+#Code to pause the question for 2 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#4th BasketBall Trivia question
+print("Q4.How many teams are mae up the NBA?")
+print("A.20\nB.60\nC.80\nD.30")
+#Using an if/esle stement to see if the user input the correct answer
+Bball_4=input("")
+if Bball_4.upper()=="D":
+    print("Correct!! *15 teams in the western Conference and 15 in the Eastern")
+else:
+    print("Incorrect the answer is D.30")
+#Code to pause the question for 2 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#5th Basketbal Trivia Question
+print("Q5.What year was the NBA founded?")
+print("A.1824\nB.1946\nC.2008\nD.345 BC")
+#Using an if/else statement to see if the user input the correct answer
+Bball_5=input("")
+if Bball_5.upper()=="B":
+    print("Correct the NBA is really old LOL")
+else:
+    print("Sorry that is incorrect the answer is B.1946")
+#Code to paused the question for 2 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#The endpoint of the basketball category and moving on to the next Section
+print("That is all the for the Basketball!!!\nNext is Football--------------------")
+#Code to pause statement for 2 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#FootBall trivia Question
+def Football_Trivia():
+    print("FOOOOOTBALLL🏈🏈\nWelcome to Football Trivia let see what you!!!")
+#1st question in the Football category
+print("Who is the leader on the team is the leader of the offense,calls the plays,and it mostly responsible for throwing/passing the ball?") 
+print("A.Running Back\nB.Wide Reciver\nC.Quarterback\nD.Tight End")
+Fb_1=input("")
+if Fb_1.upper()=="C":
+    print("Correct!!!")
+else:
+    print("Incorrect the answer is C.Quarterback")
+print("")
+import time
+time.sleep(2)
+print("")
+#2nd question in the category
+print("How many points is a touchdown worth?")
+print("A.6 points\nB.7 points\nC.1 point\nD.4 points")
+Fb_2=input("")
+if Fb_2.upper()=="A":
+    print("CORRRRECT😎")
+else:
+    print("Incorrect the answer is A.6 points")
+print("")
+import time
+time.sleep(2)
+print("")
+#3rd question in the category
+print("Who invented Football?")
+print("A.Bill Belechick\nB.Deion Sanders\nC.Walter Camp\nD.Non of these people")
+Fb_3=input("")
+if Fb_3.upper()=="C":
+    print("TOUCHDOWNNNNN you are Correct😎")
+else:
+    print("Sorry but that the wrong answer it actually C.Walter Camp")
+print("")
+import time
+time.sleep(2)
+print("")
+#4th question in the category
+print("How long is a Football field")
+print("A.10,000 yards\nB.100 yards\nC.100,000 yards\nD.100,000,000 yards")
+Fb_4=input("")
+if Fb_4.upper()=="B":
+    print("TOUNCHDOWNNNN you are correct!!!!")
+else:
+    print("Sorry that incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#5th question of the category
+print("What NFL team have won Superbowl 1 and 2")
+print("A.New England Patriots\nB.Kansas City Chiefs\nC.Seattle Seahawks\nD.Green Bay Packers")
+Fb_5=input("")
+if Fb_5.upper()=="D":
+    print("TOUCHDOWNNNNNNNNNN you are correct")
+else:
+    print("Sorry that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+print("That is all the questions for the Track Category\nNext is Track&Field.")
+print("")
+import time
+time.sleep(2)
+print("")
+#My track&Field category
+#1st question of the category
+def track_Field():
+    print("ZOOOOOOM, Welcome to the Track&Field category lets see what you know😁")
+print("Which track legend holds the world record for the men 100 meter,200 meter,and 4X1 relay")
+print("A.Jesse Owens\nB.Usain Bolt\nC.Justin Gatlin\nD.Yohan Blake")
+tf_1=input("")
+if tf_1.upper()=="B":
+    print("CORECCCCT THE LEGEND HIMSLEF!!!!!")
+else:
+    print("Sorry but that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#2nd question in the category
+print("The 100 meter equals to running_______of the track")
+print("A.one fourth\nB.half\n.C.one third\nD.Non of the above")
+tf_2=input("")
+if tf_2.upper()=="A":
+    print("CORRECTTTT!!!")
+else:
+    print("Sorry that is incorrect:(")
+print("")
+import time
+time.sleep(2)
+print("")
+#3rd question of the category
+print("What is the name of the shoes that sprinters wear?")
+print("A.cleats\nB.runnig shoes\nC.shoes\nD.Spikes")
+tf_3=input("")
+if tf_3.upper()=="D":
+    print("CORRRRRRECT")
+else:
+    print("Sorry that is incorrect")
+    print("")
+import time
+time.sleep(2)
+print("")
+#4th question in the category
+print("How lanes are usally on a typical track")
+print("A.8\nB.2\nC.11\nD.0")
+tf_4=input("")
+if tf_4.upper()=="A":
+    print("Correcttttt *It usaly varies on the track but mostly you'll see 8 lanes*")
+else:
+    print("Sorry that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#5th question in the catergory
+print('In Track&Field terms what do we call our "games"')
+print("A.matches\nB.Games\nC.Meets\nD.non of the above")
+tf_5=input("")
+if tf_5.upper()=="C":
+    print("CORRECCT they are Track Meets")
+else:
+    print("Sorry that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+print("That is all for the Track&Field Category\nNext up:BASEBALL!!!😁")
+print("")
+import time
+time.sleep(2)
+print("")
+#Baseball question
+def Baseball_Trivia():
+    print("TAKE ME OUT TO THE BALL GAMEEE!!!,Welcome to the Baseball category let see what you know⚾")
+print("How many Innigs are played in a game of baseabll?")
+print("A.7\nB.8\nC.9\nD.10")
+Base_ball1=input("")
+if Base_ball1.upper()=="C":
+    print("CORRRRECTTTTTT")
+else:
+    print("Sorry that incorrect buddy:(")
+#Code to pause question for 6 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#2nd question in the category
+print("How many seams are on a baseball?")
+print("A.108\nB.801\nC.180\nD.810")
+Base_ball2=input("")
+if Base_ball2.upper()=="A":
+    print("CORRRRRRECT")
+else:
+    print("Sorry but that is incorrect:(")
+#Code to pause question for 6 seconds
+print("")
+import time
+time.sleep(2)
+print("")
+#3rd question in the category
+print("A baseball field is also known as ________")
+print("A.Dugout\nB.Sandlot\nC.The field\nD.umm not sure")
+Base_ball3=input("")
+if Base_ball3.upper()=="B":
+    print("COREEEECT that also how the famous movie got it name too.")
+else:
+    print("Sorry that is Incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#4th question in the category
+print('In baseball which player is know as "1"?')
+print("A.Catcher\nB.Firts basemen\nC.Outfielder\nD.Pitcher")
+Base_ball4=input("")
+if Base_ball4.upper()=="D":
+    print("CORRRRRRECT")
+else:
+    print("Sorry but that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#5th question in the category
+print("What the name of the of the orson who facilitaes the game and enofrces all the rules and calls")
+print("A.Umpire\nB.Referees\nC.Facilatator\nD.Non of the above")
+Base_ball5=input("")
+if Base_ball5.upper()=="A":
+    print("CORRRRECT")
+else:
+    print("Sorry but that is incorrect:(")
+print("")
+import time
+time.sleep(2)
+print("")
+print("Thanks for playing the baseball category\nNext up:Soccer!!! 😁")
+print("")
+import time
+time.sleep(2)
+print("")
+#Soccer Triva category
+def Soccer_Trivia():
+    print("GOAAAAAAALLLLL,Welcome to the Soccer category lets see what you know😁")
+print("How long is an average soccer match?")
+print("A.20 mins\nB.1000 min\nC.90 min\nD.70 mins")
+soccer_1=input("")
+if soccer_1.upper()=="C":
+    print("GOALLLLLL your are correct!!!!")
+else:
+    print("Sorry but that is incorrect")
+print("")
+import time
+time.sleep(6)
+print("")
+#2nd question in the category
+print("During a match if a player is showig bad behavior,violating the rules,or not maintaining correct distance from a corner or free kick, or leaving or re-entering the field of play without the referee's permission they will recive a_________card")
+print("A.Yellow\nB.Purple\nC.Blue\nD.Green")
+soccer_2=input("")
+if soccer_2.upper()=="A":
+    print("GOALLLLLLL you are correct😁")
+else:
+    print("Sorry but that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#3rd question in the categoy
+print("What is a soccer field called?")
+print("A.Court\nB.Pitch\nC.Ring\nD.non of the above")
+soccer_3=input("")
+if soccer_3.upper()=="B":
+    print("GOALLLLLL you are correct😁")
+else:
+    print("Sorry that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#4th question in the category
+print("Which country won the first women's World Cup?")
+print("A.Germany\nB.France\nC.Brazil\nD.United states")
+soccer_4=input("")
+if soccer_4.upper()=="D":
+    print("GOALLLLL your are correct")
+else:
+    print("Sorry but that is incorrect buddy")
+print("")
+import time
+time.sleep(2)
+print("")
+#5th question in the category
+print("Which team won the 1st men World Cup?")
+print("A.Uruguay\nB.United states\nC.Brazil\nD.Argentina")
+soccer_5=input("")
+if soccer_5.upper()=="A":
+    print("GOALLLLLL you are correct")
+else:
+    print("Sorry that is incorrect")
+print("")
+import time
+time.sleep(2)
+print("")
+#Exception error handling for asking what there fav category was
+try:
+    input(" What was your favorite category:")
+except: TypeError
+print("That is all the questions for SPORTS TRIVIdAAAAA\nThanks for playing and remember don't tell others the answers🤐")
