@@ -1,0 +1,234 @@
+#Biodiversity Project
+#Introduction, to greet the user
+def intro():
+    print("Welcome to our Biodiversity project!")
+intro()
+#A infinite loop to re-ask the user what segment they want to read
+while True:
+    print("Which topic would like to learn about?\nWhat is Biodiversity, Food, Ecosystem, Human Intervention. (B, F, E, HI, Quit)")
+    choice = input("")
+    options = ['B', 'F', 'E', 'HI', 'QUIT']
+    #Our segment on what biodiversity is and how it works
+    def WhatBio():
+        print("Lets learn about biodiversity.\n Biodiversity is all the different creatures that exist in an area. An area with high biodiversity has many species, and one with low biodiversity has less species.\n Biodiversity supports human and societal needs, including food and nutrition, security, energy, development of medicines and pharmaceuticals and freshwater, which together underpin good health. It also supports economic opportunities, and leisure activities that contribute to overall wellbeing.\n Biodiversity loss has negative effects on several aspects of human well-being, such as food security, vulnerability to natural disasters, energy security, and access to clean water and raw materials. It also affects human health, social relations, and freedom of choice.")
+        #code to pause the code 35 seconds
+        print("")
+        import time
+        time.sleep(35)
+        print("")
+        #code to clear the output terminal
+        print("")
+        import click
+        def clrscl():
+            click.clear()
+        clrscl()
+        print("")
+    #our segment on food insecurity caused by biodiversity
+    def Food():
+        print("One of the major effects of biodiversity is its effect on our food.")
+        print("Did you know that in Thailand 50% of the land used for growing rice is only two of the ten-thousand varietys cultivated in Asia?")
+        print("Lets try some true or false questions:")
+        print("True or False: 25% of cancer drugs are natural.")
+        #This while statement is so that the code will loop and let the user reinput an answer if their first one isnt valid
+        while True:
+            flase = input("")
+            #if statement to determine what the input is and what to do with it
+            if flase.lower() == "false":
+                print("Correct! 70% of cancer drugs are natural, which means every time a new plant goes extinct, we miss out on a potenial new cure to a disease")
+                break
+            elif flase.lower() == "true":
+                print("Incorrect! 25% of modern drugs are from the rainforest, 70% of cancer drugs are natural. which means that every time we let a plant go extinct, we could be missing out on a potential cure to a disease or possibly even cancer!")
+                break
+            else:
+                print("That input is not valid, please try again.")
+        print("True or False: 33% of fish stocks are overfished")
+        #a while statement to get the user input again if their input is wrong
+        while True:
+            ture = input("")
+            if ture.lower() == "true":
+                print("Correct! 33% of fish are fished to dangerous levels. once these fish go extinct we will not be able to eat them again, which is very detremental because fish make up 10-12% of certain groups diets.")
+                break
+            elif ture.lower() == "false":
+                print("Incorrect, 33% of fish are fished to dangerous levels. once these fish go extinct we will not be able to eat them again, which is very detremental because fish make up 10-12% of certain groups diets.")
+                break
+            else:
+                print("Your input didnt match, please try again.")
+        print("True or False:")
+        print("There are 1,500 types of bananas, but only one is sold globally")
+        #a while statement to get the user input again if their input is wrong
+        while True:
+            fslae = input("")
+            if fslae.lower() == "false":
+                print("Correct! The Cavendish bananas dominate the global trade market but they arent the only one in trade, they just are the majority.")
+                break
+            elif fslae.lower() == 'true':
+                print("Incorrect! The Cavendish bananas dominate the global trade market but they arent the only one in trade, they just are the majority.")
+                break
+            else:
+                print("That input isn't valid, please try again.")
+        print('Thank you, for taking the time to learn about food in biodiversity.')
+        #Code to pause the code for 3 seconds
+        print("")
+        import time
+        time.sleep(3)
+        print("")
+        #code to clear the output screen
+        print("")
+        import click
+        def clrscl():
+            click.clear()
+        clrscl()
+        print("")
+    #How biodiversity is affecting ecosystems
+    def Ecosystem():    # this is the defining of the ecosystems sub-topic
+        print("Welcome to Ecosystem!")
+        print("In this topic you will learn what is going on in the ecosystems around the world. You will also learn the problems in these ecosystems and how they are being solved.")
+        print("Time to learn about the problems in ecosystems!")    # These are the info parts
+        print("The world populates 7.6 billion people representing 0.01% of all living things by weight, but humanity has caused the loss of 83% of all wild mammals and half of all plants.")
+        print("Three crops – wheat, corn and rice – provide almost 60% of total plant-based calories consumed by humans. This leads to reduced resiliency in our supply chains and on our plates. For example, the number of rice varieties cultivated in Asia has dropped from tens of thousands to just a few dozen; in Thailand, 50% of land used for growing rice only produces two varieties.")
+        print("Time for a quiz")
+        quest = input("What is one of the crops that provide 60% of total plant based calories?: ")
+        foodList = ["Wheat","Corn","Rice"]   #This is the start of the quiz to test your knowledge it uses if else statements.
+        if quest.title() in foodList:
+            print("Good job now for the next question!")
+            quest2 = input("How much does the worlds human population represent in weight?: ")
+            if quest2 == "0.01":
+                print("Correct now for the next question")
+                quest3 = input("What percent of animal loss have humans caused?: ")
+                if quest3 == "83%":
+                    print("Good job 3/3 questions correct.")
+                else:
+                    print("Wrong 2/3 correct, humans have caused 83% of animal loss")
+            elif quest2 != "0.01":
+                print("Wrong it was 0.01%. Next question")
+                quest3 = input("What percent of animal loss have humans caused?: ")
+                if quest3 == "83%":
+                    print("Good job 2/3 questions correct.")
+                else:
+                    print("Wrong 1/3 correct, humans have caused 83% of animal loss")
+            else:
+                print("Wrong it was 0.01%. Next question")
+                quest3 = input("What percent of animal loss have humans caused?: ")
+                if quest3 == "83%":
+                    print("Good job 1/3 questions correct.")
+                else:
+                    print("Wrong 0/3 correct, humans have caused 83% of animal loss")
+        elif quest.title() != "Wheat" or "Corn" or "Rice":
+            print("Nope it was wheat, corn, or rice")
+            quest2 = input("How much does the worlds human population represent in weight?: ")
+            if quest2 == "0.01":
+                print("Correct now for the next question")
+                quest3 = input("What percent of animal loss have humans caused?: ")
+                if quest3 == "83%":
+                    print("Good job 2/3 questions correct.")
+                else:
+                    print("Wrong 1/3 correct, it was 83%")
+            elif quest2 != "0.01":
+                print("Wrong it was 0.01%. Next question")
+                quest3 = input("What percent of animal loss have humans caused?: ")
+                if quest3 == "83%":
+                    print("Good job 1/3 questions correct.")
+                else:
+                    print("Wrong 0/3 correct, It was 83%")
+            else:
+                print("Not an option")
+        else:
+            print("Not one of the options")
+        #Code to pause and clear the output terminal
+        print("")
+        import time
+        time.sleep(3)
+        print("")
+        print("")
+        import click
+        def clrscl():
+            click.clear()
+        clrscl()
+        print("")
+    def HumInt():
+        print("Welcome to Human intervention!")
+        print("")
+        print("Human Intervention is very important to help Biodiversity")
+        print("")
+        userInput2 = input("Have you done anything to protect biodiversity? (y/n): ")
+        print(userInput2)
+        while True:
+            if userInput2 == "y":
+                print("Thats great! Here are some other ways you could help... ") # Takes the users answer and makes sure if its correct or incorrect
+                break
+            elif userInput2 == "n":
+                print("Thats okay! Here are some ways you could help...")
+                break
+            else:
+                print("Invalid input.")
+                break
+                
+        print("One way you could help is to stop polluting oceans and land. This can cause many ecosystems to be destroyed.")
+        print("")
+        userAnswer = input("What ways do us humans pollute the world?: ")
+        answersList = ["Pesticides", "Climate Change", "Overfishing", "Mining"]
+        if userAnswer in answersList:
+            print("That is correct! Humans impact the enviroment in many negative ways. Some other examples of how we damage the enviroment is", answersList) # Determines if the answer is in the list, and determines which output to display
+        else:
+            print("That could be a way, but some other ways are", answersList)
+
+        print("You should also try not to bring invasive species back from other countries. Invasive species causes other animals to not be able to protect themselves from unknown species.")
+        invasiveList = ["Mongoose", "Dogs,", "Racoons", "Bald Eagles"]
+        userInput3 = input("Which of the following is a invasive species? (Mongoose, Dog, Raccoon, Bald Eagles): ")
+        if userInput3 == "Mongoose": 
+            print("That is correct! Mongooses invaded Hawaii when mongooses were brought from india to reduce rats from eating surgarcane.") #Deterimes if answer is inccorect and explains the answers for each one
+        else:
+            print("That is incorrect. The correct answer was mongooses! Mongooses invaded Hawaii when mongooses were brought from India to reduce rats from eating sugarcane. ")
+        print("")
+        print("Another way is to reduce climate change. Climate change damages enviroments and ecosystems. It also damages air quality.")
+        userInput = input("How else do you think you could solve biodiversity?: ") #Asks users opinion on biodiversity
+        while True: 
+            if userInput.isalpha():
+                print(userInput, "sounds like a good solution! ") 
+                break
+            elif userInput.isdigit():
+                print("Incorrect.")
+                break
+        #code to pause and clear the output terminal
+        print("")
+        import time
+        time.sleep(3)
+        print("")
+        print("")
+        import click
+        def clrscl():
+            click.clear()
+        clrscl()
+        print("")
+    #Code to determine what the user inputed
+    if choice.upper() in options:
+        if choice.upper() == "B":
+            WhatBio()
+        elif choice.upper() == "F":
+            Food()
+        elif choice.upper() == "E":
+            Ecosystem()
+        elif choice.upper() == "HI":
+            HumInt()
+        elif choice.upper() == "QUIT":
+                break
+    else:
+        print("Error, Please enter again")
+def ending():
+    print("")   #Prints the group members and our sources for the project
+    print("Thank you for visiting our Sustainability Project! We hope you learned a thing or two about biodiversity.")
+    print("CREDITS")
+    print("Sophia Swart: Product owner. Functions: ending and HumInt ")
+    print("Owen Murphy: Programmer. Functions: intro and Food")
+    print("Obed Kidimbu: Researcher. Functions: WhatBio")
+    print("Andrew Guerroro: Quality Control. Functions: Ecosystem") 
+    print("")       #Credits and links to the sources
+    print("SOURCES")
+    print("https://royalsociety.org/topics-policy/projects/biodiversity/why-is-biodiversity-important/#:~:text=Biodiversity%20is%20essential%20for%20the,also%20value%20nature%20of%20itsel")
+    print("https://earth.org/solutions-to-biodiversity-loss/ ")
+    print("https://www.weforum.org/agenda/2020/05/5-reasons-why-biodiversity-matters-human-health-economies-business-wellbeing-coronavirus-covid19-animals-nature-ecosystems ")
+    print("https://www.who.int/news-room/fact-sheets/detail/biodiversity-and-health#:~:text=Biodiversity%20supports%20human%20and%20societal,that%20contribute%20to%20overall%20wellbeing.")
+    print("https://www.greenfacts.org/en/biodiversity/index.htm#:~:text=2.1%20Biodiversity%20loss%20has%20negative,relations%2C%20and%20freedom%20of%20choice.")
+    print("https://earth.org/preventing-biodiversity-loss-solutions-and-new-targets")
+    print("")
+ending()
